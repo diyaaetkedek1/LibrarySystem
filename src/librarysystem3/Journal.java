@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package librarysystem3;
 
 /**
@@ -11,16 +7,16 @@ package librarysystem3;
 public class Journal extends Book {
 
     private String conferenceName;
-    private String conferenceNo;
+    private int conferenceNo;
 
     // Constructors
-    public Journal(String conferenceName, String conferenceNo, String title, BookAuthor author, String no, String genre, String version, Date date, boolean isLoaned) {
+    public Journal(String conferenceName, int conferenceNo, String title, BookAuthor author, int no, String genre, String version, Date date, boolean isLoaned) {
         super(title, author, no, genre, version, date, isLoaned);
         this.conferenceName = conferenceName;
         this.conferenceNo = conferenceNo;
     }
 
-    public Journal(String conferenceName, String conferenceNo) {
+    public Journal(String conferenceName, int conferenceNo) {
         this.conferenceName = conferenceName;
         this.conferenceNo = conferenceNo;
     }
@@ -37,11 +33,11 @@ public class Journal extends Book {
         this.conferenceName = conferenceName;
     }
 
-    public String getConferenceNo() {
+    public int getConferenceNo() {
         return conferenceNo;
     }
 
-    public void setConferenceNo(String conferenceNo) {
+    public void setConferenceNo(int conferenceNo) {
         this.conferenceNo = conferenceNo;
     }
 

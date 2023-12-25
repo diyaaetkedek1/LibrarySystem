@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package librarysystem3;
 
 /**
@@ -10,27 +6,27 @@ package librarysystem3;
  */
 public class Magazine extends Book {
 
-    private String issueNo;
+    private int issueNo;
     private Date releaseDate;
 
     // Constructors
-    public Magazine(String issueNo, Date releaseDate, String title, BookAuthor author, String no, String genre, String version, Date date, boolean isLoaned) {
+    public Magazine(int issueNo, Date releaseDate, String title, BookAuthor author, int no, String genre, String version, Date date, boolean isLoaned) {
         super(title, author, no, genre, version, date, isLoaned);
         this.issueNo = issueNo;
         this.releaseDate = releaseDate;
     }
 
-    public Magazine(String issueNo, Date releaseDate) {
+    public Magazine(int issueNo, Date releaseDate) {
         this.issueNo = issueNo;
         this.releaseDate = releaseDate;
     }
 
     // Getters and Setters
-    public String getIssueNo() {
+    public int getIssueNo() {
         return issueNo;
     }
 
-    public void setIssueNo(String issueNo) {
+    public void setIssueNo(int issueNo) {
         this.issueNo = issueNo;
     }
 

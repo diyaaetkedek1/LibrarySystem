@@ -1,8 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package librarysystem3;
+
+import java.util.ArrayList;
 
 /**
  *
@@ -12,14 +10,14 @@ public class Book implements Display {
 
     private String title;
     private BookAuthor author;
-    private String no;
+    private int no;
     private String genre;
     private String version;
     private Date date;
     private boolean isLoaned;
 
     // Constructors
-    public Book(String title, BookAuthor author, String no, String genre, String version, Date date, boolean isLoaned) {
+    public Book(String title, BookAuthor author, int no, String genre, String version, Date date, boolean isLoaned) {
         this.title = title;
         this.author = author;
         this.no = no;
@@ -27,6 +25,7 @@ public class Book implements Display {
         this.version = version;
         this.date = date;
         this.isLoaned = isLoaned;
+
     }
 
     public Book() {
@@ -49,11 +48,11 @@ public class Book implements Display {
         this.author = author;
     }
 
-    public String getNo() {
+    public int getNo() {
         return no;
     }
 
-    public void setNo(String no) {
+    public void setNo(int no) {
         this.no = no;
     }
 
@@ -89,17 +88,14 @@ public class Book implements Display {
         this.isLoaned = isLoaned;
     }
 
-    // Implement Display Interface
     @Override
     public String getInfo() {
         return "Title: " + title + ", Author: " + author.getName() + ", Number: " + no
                 + ", Genre: " + genre + ", Version: " + version + ", Date: " + date.toString();
     }
 
-    // Additional Method
     @Override
     public boolean inLoan() {
         return isLoaned;
     }
 }
-

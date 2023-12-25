@@ -1,8 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package librarysystem3;
+
+import java.util.ArrayList;
 
 /**
  *
@@ -23,6 +21,7 @@ public class Student {
         this.address = address;
         this.birthDate = birthDate;
         this.major = major;
+
     }
 
     // Getters and Setters
